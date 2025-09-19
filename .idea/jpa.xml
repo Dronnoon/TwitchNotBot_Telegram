@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig" migrateIndexesAndConstraints="true" reUseTableSchema="true">
+    <option name="migrateIndexesAndConstraints" value="true" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/DataBase/Entity" />
+    <option name="reverseEngineeringLastDbConnectionId" value="ed8cb795-fe88-4e12-bd47-7a6f297132c4" />
+  </component>
+  <component name="JpaPluginProjectSettings" mapReferencesToBasicType="true" reExcludeTablePrefixes="" reExcludeColumnPrefixes="" reExcludeTableSuffixes="" reExcludeColumnSuffixes="">
+    <option name="entityNameTemplate" value="${className.underscore()}" />
+    <option name="generateJpaOnGetter" value="true" />
+    <option name="generateTypeOnEntity" value="true" />
+    <option name="useBuilderSetters" value="true" />
+    <option name="scaffoldingLanguage" value="Java" />
+  </component>
+</project>

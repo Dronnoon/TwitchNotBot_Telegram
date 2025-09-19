@@ -1,0 +1,14 @@
+{
+  "twitchKey": [
+    {
+      "clientId": "",
+      "clientSecret": "",
+      "OAuth2": ""
+    }
+  ],
+  "telegramKey": [
+    {
+      "botToken": ""
+    }
+  ]
+}

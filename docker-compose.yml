@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres:17
+    container_name: my_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: notificationBot
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./notificationBot.sql:/docker-entrypoint-initdb.d/notificationBot.sql
+
+  app:
+    build: .
+    container_name: twitch-notification-bot
+
+    depends_on:
+      - db
+    restart: always
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/notificationBot
+      DB_USER: postgres
+      DB_PASSWORD: 1234
